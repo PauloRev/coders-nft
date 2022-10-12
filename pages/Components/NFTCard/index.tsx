@@ -13,7 +13,7 @@ export function NFTCard({ listing }: NFTCardProps) {
 
   const handleNftClick = useCallback(() => {
     router.push(`/nft/${listing.asset.id}`);
-  }, []);
+  }, [listing.asset.id]);
 
   return (
     <div className="w-[24rem] h-[31rem] bg-[#242634] rounded-[1.25rem] cursor-pointer" onClick={handleNftClick}>
