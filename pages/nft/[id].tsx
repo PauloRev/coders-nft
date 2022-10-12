@@ -36,7 +36,7 @@ export default function NFTDetails() {
       Notify.success('You have successfully bought this NFT!');
 
     } catch (err) {
-      // console.log('BUY ERROR => ', err);
+      // console.log('ERROR => ', err);
       setLoadingPurchase(false);
       Notify.failure('Failed to buy this NFT!');
     }
